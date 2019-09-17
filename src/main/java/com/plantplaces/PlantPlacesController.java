@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @author Administrator
  * Handle /start end point
+ * @return
  */
+
 @Controller
 public class PlantPlacesController {
 	
@@ -16,6 +18,11 @@ public class PlantPlacesController {
 		return "start";
 	}
 	
+	
+	/**
+	 * Handle the / end point
+	 *@return
+	 */
 	@RequestMapping("/")
 	public String index() {
 		
