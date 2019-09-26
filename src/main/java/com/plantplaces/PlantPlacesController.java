@@ -13,11 +13,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class PlantPlacesController {
-	
+
 	@RequestMapping(value="/start", method=RequestMethod.GET)
 	public String read() {
 		
 		return "start";
+	}
+	
+	@RequestMapping(value="/carlos", method=RequestMethod.GET)
+	public String readCarlos() {
+		
+		return "carlos";
 	}
 	
 	@RequestMapping(value="/start", method=RequestMethod.GET, params = {"loyalty=silver"})
