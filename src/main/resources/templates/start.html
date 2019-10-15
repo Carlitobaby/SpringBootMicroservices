@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>PlantPlaces.com</title>
 </head>
 <body>
 Welcome to PlantPlaces!
+<p th:text="${specimenDTO}"/>
 <br>
 <a href="/carlos"><button>Go to new page!</button></a>
 </body>
